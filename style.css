@@ -13,6 +13,13 @@
 
 * {
     margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-colour);
+    font-family: var(--secondary-font);
 }
 
 h1 {
@@ -43,7 +50,7 @@ p {
 .main__container_heading {
     display: flex;
     justify-content: center;
-    margin-top: 24%;
+    margin-top: 22%;
     color: var(--primary-colour);
 }
 
