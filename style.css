@@ -1,7 +1,7 @@
 :root {
     --primary-colour: #fff;
     --secondary-colour: #000;
-    --accent-colour: #a9a9a9;
+    --accent-colour: #62ff68;
 
     --primary-font: Revolte;
     --secondary-font: Helvetica;
@@ -86,7 +86,7 @@ p {
     content: '';
     height: 3px;
     width: 0%;
-    background: #607EAA;
+    background: var(--accent-colour);
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -94,5 +94,5 @@ p {
 }
 
 .main__container_navigation_links ul li:hover::after {
-    width: 5%;
+    width: 100%;
 }
