@@ -1,66 +1,88 @@
-:root{
+:root {
     --primary-colour: #fff;
     --secondary-colour: #000;
-    --accent-colour: #a8db98;
+    --accent-colour: #a9a9a9;
 
     --primary-font: Revolte;
     --secondary-font: Helvetica;
-    --heading-font-size:64px;
-    --heading-font-weight:500;
-    --body-font-size:12px;
-    --body-font-weight:300;
+    --heading-font-size: 64px;
+    --heading-font-weight: 500;
+    --body-font-size: 12px;
+    --body-font-weight: 300;
 }
 
-*{
-    background-color: var(--accent-colour);
+* {
+    margin: 0;
 }
 
-h1{
+h1 {
     font-family: var(--primary-font);
     font-size: var(--heading-font-size);
     font-weight: var(--heading-font-weight);
 }
 
-p{
+p {
     font-family: var(--secondary-font);
     font-size: var(--body-font-size);
     font-weight: var(--body-font-weight);
 }
 
-.main__container_heading{
+
+.main__container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/img/forestbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y 100%;
+    background-attachment: scroll;
+    position: absolute;
+
+}
+
+.main__container_heading {
     display: flex;
     justify-content: center;
     margin-top: 24%;
+    color: var(--primary-colour);
 }
 
-.main__container_bodytext{
+.main__container_bodytext {
     display: flex;
     justify-content: center;
     text-align: center;
+    color: var(--primary-colour);
 }
 
-.main__container_navigation_links > ul > li{
+.main__container_navigation_links>ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.main__container_navigation_links>ul>li {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     font-family: var(--secondary-font);
+    color: var(--primary-colour);
 
 }
 
-.main__container_navigation_links  ul li {
+.main__container_navigation_links ul li {
     list-style: none;
     margin: 0 20px;
     position: relative;
-  }
-  
-  .main__container_navigation_links  ul li a {
+}
+
+.main__container_navigation_links ul li a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-  }
-  
-  .main__container_navigation_links  ul li::after {
+}
+
+.main__container_navigation_links ul li::after {
     content: '';
     height: 3px;
     width: 0%;
@@ -69,8 +91,8 @@ p{
     left: 0;
     bottom: -10px;
     transition: 0.5s;
-  }
-  
-  .main__container_navigation_links  ul li:hover::after {
+}
+
+.main__container_navigation_links ul li:hover::after {
     width: 5%;
-  }
+}
