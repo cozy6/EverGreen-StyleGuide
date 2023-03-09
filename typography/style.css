@@ -1,0 +1,12 @@
+:root {
+    --primary-colour: #fff;
+    --secondary-colour: #000;
+    --accent-colour: #62ff68;
+
+    --primary-font: Revolte;
+    --secondary-font: Helvetica;
+    --heading-font-size: 64px;
+    --heading-font-weight: 500;
+    --body-font-size: 12px;
+    --body-font-weight: 300;
+}
