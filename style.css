@@ -3,7 +3,7 @@
     --secondary-colour: #000;
     --accent-colour: #62ff68;
 
-    --primary-font: Revolte;
+    --primary-font: Nunito Sans;
     --secondary-font: Helvetica;
     --heading-font-size: 64px;
     --heading-font-weight: 500;
@@ -16,10 +16,13 @@
 
 }
 
+
 a {
     text-decoration: none;
     color: var(--primary-colour);
     font-family: var(--secondary-font);
+
+  
 }
 
 h1 {
